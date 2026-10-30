@@ -1281,6 +1281,7 @@ namespace Inkeys::UI::Bar
 	export PresentationAlphaDiagnostics SnapshotPresentationAlphaDiagnostics() noexcept;
 	export void SetAnimationOptions(bool enable, double speedRate);
 	export void SetEdgeLightingOptions(bool enable, bool dynamic);
+	export void SetBarLightMode(bool light);
 	export void SetDebugOptions(bool enable, bool showFrameRate);
 	export bool DebugModeEnabled() noexcept;
 	export void SetCurrentPageHasContent(bool hasContent) noexcept;

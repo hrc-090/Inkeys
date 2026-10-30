@@ -496,6 +496,8 @@
         "EdgeLightingE": "關閉後僅保留基礎邊框，停用點光與柔光效果。",
         "DynamicEdgeLighting": "動態邊緣光影",
         "DynamicEdgeLightingE": "光影將動態跟隨游標位置",
+        "BarLightMode": "主欄淺色模式",
+        "BarLightModeE": "主欄與按鈕切換為淺色配色，適合白色背景或淺色桌面。",
         "Theme":
         {
           "N": "主題",

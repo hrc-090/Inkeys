@@ -2922,6 +2922,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPWSTR lpC
 			Inkeys::UI::Bar::SetEdgeLightingOptions(
 				config.Experimental.Inkeys3.UI3.EdgeLighting.Enable,
 				config.Experimental.Inkeys3.UI3.EdgeLighting.Dynamic);
+			Inkeys::UI::Bar::SetBarLightMode(config.UI.Bar.LightMode);
 			Inkeys::UI::Bar::SetDebugOptions(
 				config.Experimental.Inkeys3.UI3.Debug.Enable,
 				config.Experimental.Inkeys3.UI3.Debug.ShowFrameRate);

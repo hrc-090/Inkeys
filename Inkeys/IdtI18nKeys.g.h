@@ -499,6 +499,8 @@ inline constexpr struct I18nKeyRoot
                 const char* EdgeLightingE = "SettingsUI/Regular/Appearance/EdgeLightingE";
                 const char* DynamicEdgeLighting = "SettingsUI/Regular/Appearance/DynamicEdgeLighting";
                 const char* DynamicEdgeLightingE = "SettingsUI/Regular/Appearance/DynamicEdgeLightingE";
+                const char* BarLightMode = "SettingsUI/Regular/Appearance/BarLightMode";
+                const char* BarLightModeE = "SettingsUI/Regular/Appearance/BarLightModeE";
                 struct Node__SettingsUI__Regular__Appearance__Theme
                 {
                     const char* N = "SettingsUI/Regular/Appearance/Theme/N";

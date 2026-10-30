@@ -496,6 +496,8 @@
         "EdgeLightingE": "When disabled, only the basic border remains; point lights and soft glow effects are turned off.",
         "DynamicEdgeLighting": "Dynamic edge lighting",
         "DynamicEdgeLightingE": "The lighting dynamically follows the pointer position.",
+        "BarLightMode": "Light toolbar",
+        "BarLightModeE": "Switch the toolbar and buttons to a light color scheme, suited to white backgrounds or bright desktops.",
         "Theme":
         {
           "N": "Theme",

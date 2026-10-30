@@ -3069,6 +3069,7 @@ SettingSessionCoroutine RunSettingSession()
 						static_cast<int>(Inkeys::UI::NormalizeStartupPlacement(Inkeys::config.UI.Bar.StartupPlacement.load())),
 						std::clamp(Inkeys::config.UI.Bar.UseTaskbarHeightAsScaleBase.load(), 0, 2) };
 					draft.settingEntryAnimation = setlist.settingEntryAnimation;
+					draft.barLightMode = Inkeys::config.UI.Bar.LightMode;
 					// 每帧冻结本页偏好，页面只产出事件，运行时通知仍留在既有 FIFO 业务域。
 					draft.selectMode = GetSelectAndClickThroughMode();
 					const int iconOrder = Inkeys::config.UI.Bar.IconOrder.load();
@@ -3152,6 +3153,12 @@ SettingSessionCoroutine RunSettingSession()
 						{
 							setlist.settingEntryAnimation = draft.settingEntryAnimation;
 							WriteSetting();
+						}
+						if (events.barLightModeChanged)
+						{
+							Inkeys::config.UI.Bar.LightMode = draft.barLightMode;
+							Inkeys::UI::Bar::SetBarLightMode(draft.barLightMode);
+							QueueConfigWrite();
 						}
 						if (events.taskbarScaleBaseChanged)
 						{

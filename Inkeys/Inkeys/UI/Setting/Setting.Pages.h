@@ -252,6 +252,7 @@ namespace Inkeys::UI::Setting::Design
 		bool animation = true;
 		float animationRate = 1.0F;
 		bool dynamicEdgeLighting = false;
+		bool barLightMode = false;
 		int startupPlacement = 0;
 		int taskbarScaleBase = 0;
 		int selectMode = 0, iconOrder = 0, expansionDirection = 1;
@@ -278,6 +279,7 @@ namespace Inkeys::UI::Setting::Design
 		bool animationChanged = false;
 		bool animationRateActive = false;
 		bool dynamicEdgeLightingChanged = false;
+		bool barLightModeChanged = false;
 		bool startupPlacementChanged = false;
 		bool taskbarScaleBaseChanged = false;
 		bool selectModeChanged = false, iconOrderChanged = false, expansionDirectionChanged = false;

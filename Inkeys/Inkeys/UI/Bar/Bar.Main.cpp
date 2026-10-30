@@ -341,6 +341,13 @@ namespace Inkeys::UI::Bar
 		barUISet.UpdateRendering(false);
 	}
 
+	void SetBarLightMode(bool light)
+	{
+		// 主题色由渲染循环逐帧按 darkStyle 取色，改完下一帧即平滑过渡。
+		barUISet.barStyle.darkStyle = !light;
+		barUISet.UpdateRendering(false);
+	}
+
 	void SetDebugOptions(bool enable, bool showFrameRate)
 	{
 		BarUiDebugModeEnabled = enable;

@@ -842,6 +842,9 @@ namespace Inkeys::UI::Setting::Design
 				events.dynamicEdgeLightingChanged = ToggleRow("dynamic-edge-lighting",
 					IA(I18nKey.SettingsUI.Regular.Appearance.DynamicEdgeLighting).c_str(),
 					IA(I18nKey.SettingsUI.Regular.Appearance.DynamicEdgeLightingE).c_str(), "\ue706", draft.dynamicEdgeLighting);
+			events.barLightModeChanged = ToggleRow("bar-light-mode",
+				IA(I18nKey.SettingsUI.Regular.Appearance.BarLightMode).c_str(),
+				IA(I18nKey.SettingsUI.Regular.Appearance.BarLightModeE).c_str(), "\ue706", draft.barLightMode);
 			SectionHeader(IA(I18nKey.SettingsUI.Design.ScalingSection).c_str());
 			events.taskbarScaleBaseChanged = ComboRow("##以任务栏高度作为缩放基础量",
 				IA(I18nKey.SettingsUI.Regular.Appearance.TaskbarScaleBase.N).c_str(),
